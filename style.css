@@ -1,54 +1,135 @@
+@font-face {
+  font-family: "roboto";
+  src: url(./assets/fonts/Roboto-Regular.ttf);
+}
 * {
   margin: 0;
   padding: 0;
-}
-body {
-  background: rgba(6, 6, 42, 0.418);
+  font-family: "roboto";
 }
 header {
-  background: url(./assets/img/banner.jpg) fixed center/cover;
-  min-height: 500px;
   display: flex;
-  justify-content: center;
+  padding: 8px 8px;
   align-items: center;
 }
-h1 {
-  color: rgba(4, 128, 244, 0.875);
-  text-transform: uppercase;
-  font-size: 3rem;
-}
-.section1 {
-  margin-top: 50px;
+.container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.header-logo img {
+  height: 80px;
+}
+.header-right {
+  padding: 20px 50px;
+  display: flex;
   align-items: center;
 }
-.section1-container {
-  width: 60%;
+.header-right a {
+  text-decoration: none;
+  color: #004595;
+  font-weight: bold;
+  font-size: small;
+  letter-spacing: 1px;
 }
-.section1-container :nth-child(1) {
-  display: flex;
-  justify-content: center;
-  text-align: center;
+.button1 {
+  margin: 0 50px;
+  border: 1px solid #004595;
+  color: #004595;
+  background: none;
+  font-weight: bold;
+  font-size: small;
 }
-.section1-container :nth-child(2) {
-  display: flex;
-  justify-content: space-around;
+.button2 {
+  border: none;
+  font-weight: 500;
+  font-size: small;
+  border: 1px solid #91c74b;
+  background: #91c74b;
+  color: white;
 }
-p {
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  font-size: 1.5rem;
-}
-button {
-  background: transparent;
-  border: solid 1px rgba(206, 191, 191, 0.648);
-  border-radius: 50px;
-  padding: 10px 20px;
+.button1,
+.button2 {
+  padding: 10px;
+  width: 150px;
+  border-radius: 5px;
+  letter-spacing: 1px;
   cursor: pointer;
   transition: 0.3s;
 }
-button:hover {
-  background: pink;
-  border: none;
+.home {
+  display: flex;
+  align-items: center;
+  background: #cdf7f63e;
+  color: #69a3a2;
+  padding: 10px 40px;
+  font-size: small;
+  font-weight: lighter;
+  border-bottom: 2px solid #cdf7f6;
+}
+.home p {
+  margin-right: 15px;
+}
+main {
+  background: #f2f5f8;
+  padding: 50px 0;
+}
+.section1 {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.bienvenue {
+  display: grid;
+  grid-template-columns: 66% 34%;
+  gap: 15px;
+  margin-top: 15px;
+}
+.bienvenue-left,
+.bienvenue-right {
+  background: white;
+  border-radius: 10px;
+}
+.bienvenue-left {
+  padding: 20px 15px;
+}
+.bienvenue-left-img {
+  background: url(./assets/img/medecin.jpg) center/cover;
+  height: 230px;
+  border-radius: 10px;
+}
+.bienvenue-left h2 {
+  width: 90%;
+  margin: 40px 0 10px;
+}
+
+.bienvenue-left h2,
+.section1 h3 {
+  color: #133b3a;
+}
+.bienvenue-left p {
+  color: #69a3a2;
+  margin-bottom: 30px;
+  font-size: small;
+}
+.i {
+  display: flex;
+  justify-content: space-between;
+}
+.left-text {
+  padding: 10px;
+  margin: 0 auto;
+}
+.i i {
+  color: #8172d5;
+}
+.i1 i {
+  margin-right: 10px;
+  width: 8px;
+  font-size: 12px;
+}
+.i2 {
+  width: 60px;
+  display: flex;
+  justify-content: space-between;
 }
