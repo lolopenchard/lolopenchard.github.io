@@ -7,11 +7,15 @@
   padding: 0;
   font-family: "roboto";
 }
+
+/* ****************************header***************************/
+
 header {
   display: flex;
   padding: 8px 8px;
   align-items: center;
 }
+
 .container {
   display: flex;
   justify-content: space-between;
@@ -57,10 +61,13 @@ header {
   cursor: pointer;
   transition: 0.3s;
 }
+
+/* ****************************home**************************/
+
 .home {
   display: flex;
   align-items: center;
-  background: #cdf7f63e;
+  background: #cdf7f62c;
   color: #69a3a2;
   padding: 10px 40px;
   font-size: small;
@@ -68,15 +75,28 @@ header {
   border-bottom: 2px solid #cdf7f6;
 }
 .home p {
-  margin-right: 15px;
+  margin-right: 20px;
+  font-size: smaller;
 }
+.home i {
+  font-size: smaller;
+}
+
+/* ******************************main************************/
+
 main {
   background: #f2f5f8;
   padding: 50px 0;
 }
-.section1 {
+section {
   width: 80%;
   margin: 0 auto;
+}
+
+/* *****************************section1***************************/
+
+.section1 {
+  margin-bottom: 60px;
 }
 
 .bienvenue {
@@ -89,10 +109,9 @@ main {
 .bienvenue-right {
   background: white;
   border-radius: 10px;
-}
-.bienvenue-left {
   padding: 20px 15px;
 }
+
 .bienvenue-left-img {
   background: url(./assets/img/medecin.jpg) center/cover;
   height: 230px;
@@ -104,7 +123,7 @@ main {
 }
 
 .bienvenue-left h2,
-.section1 h3 {
+h3 {
   color: #133b3a;
 }
 .bienvenue-left p {
@@ -132,4 +151,136 @@ main {
   width: 60px;
   display: flex;
   justify-content: space-between;
+}
+.bienvenue-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.right {
+  display: flex;
+}
+
+.img-right img {
+  height: 80px;
+  border-radius: 10px;
+  margin-right: 15px;
+}
+.text-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.text-right h5 {
+  color: #133b3a;
+}
+
+.text-right p {
+  font-size: smaller;
+  color: #69a3a2;
+}
+
+/* *******************************section2**************************/
+
+.section2 {
+  margin-bottom: 60px;
+}
+
+.demande-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 15px;
+}
+.demande {
+  background: white;
+  padding: 20px 15px;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.demandes-left-img {
+  background: url(./assets/img/consultation.jpg) top/cover;
+  height: 125px;
+  border-radius: 10px;
+}
+.demandes-right-img {
+  background: url(./assets/img/pharmacie.jpg) center/cover;
+  height: 125px;
+  border-radius: 10px;
+}
+.demande h3 {
+  margin-top: 20px;
+  letter-spacing: 1px;
+}
+.demande p {
+  font-size: 0.9rem;
+  color: #004595;
+  margin: 20px 0;
+  width: 90%;
+}
+.button {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.demande button {
+  background: none;
+  padding: 10px 100px;
+  color: #004595;
+  border: 1px solid #004595;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/*******************************section3***************************/
+
+.section3 {
+  margin-bottom: 40px;
+}
+.section3 h3 {
+  margin-bottom: 20px;
+}
+.questions {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 15px;
+  margin-top: 10px;
+}
+.lorem {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  border-radius: 10px;
+  padding: 30px;
+  color: #8172d5;
+}
+
+/********************************footer*********************************/
+
+.espace {
+  background: #cdf7f62c;
+  height: 95px;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #004595;
+  color: white;
+  height: 70px;
+  padding-left: 40px;
+  padding-right: 110px;
+  font-size: smaller;
+  font-weight: 300;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+.footer-container a {
+  text-decoration: none;
+  color: white;
 }
