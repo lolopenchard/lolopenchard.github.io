@@ -1,0 +1,33 @@
+@font-face {
+  font-family: "font1";
+  src: url(../fonts/Merriweather-Light.ttf);
+}
+@font-face {
+  font-family: "font2";
+  src: url(../fonts/Inter-ExtraBold.ttf);
+}
+$white: rgba(253, 242, 242, 0.943);
+* {
+  margin: 0;
+  padding: 0;
+}
+@mixin before-after {
+  content: "";
+  height: 2px;
+  width: 30%;
+  background: rgba(222, 212, 212, 0.512);
+  position: absolute;
+  top: 50%;
+}
+ul {
+  display: flex;
+  @media screen and (max-width: 850px) {
+    width: 100%;
+    justify-content: space-around;
+    padding: 0;
+  }
+}
+
+li {
+  list-style: none;
+}

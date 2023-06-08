@@ -1,0 +1,429 @@
+@font-face {
+  font-family: "font1";
+  src: url(../fonts/Merriweather-Light.ttf);
+}
+@font-face {
+  font-family: "font2";
+  src: url(../fonts/Inter-ExtraBold.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  display: flex;
+}
+@media screen and (max-width: 850px) {
+  ul {
+    width: 100%;
+    justify-content: space-around;
+    padding: 0;
+  }
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  font-family: "font2";
+  font-size: small;
+  padding: 10px 30px;
+  border: 2px solid black;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: transparent;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover {
+  color: white;
+  background: black;
+}
+
+body {
+  background: url(../images/bg.jpg) fixed center/cover;
+  min-height: 100vh;
+  padding: 30px 0;
+}
+
+header div {
+  text-align: center;
+  color: rgba(253, 242, 242, 0.943);
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 150px;
+}
+header div h1 {
+  text-transform: uppercase;
+  font-family: "font2";
+  font-size: 3.5rem;
+  letter-spacing: 5px;
+  width: 70%;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1000px) {
+  header div h1 {
+    font-size: 2rem;
+    width: 100%;
+  }
+}
+header div p {
+  font-family: "font1";
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+header div i {
+  border: 2px solid rgba(253, 242, 242, 0.943);
+  border-radius: 50px;
+  padding: 16px 19px;
+  font-size: 1rem;
+}
+
+nav {
+  display: flex;
+  width: 75%;
+  margin: 0 auto;
+  font-family: "font2";
+  margin-top: 100px;
+  background: rgba(248, 237, 237, 0.277);
+}
+nav .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+nav .navbar .navbar-left {
+  display: flex;
+}
+@media screen and (max-width: 850px) {
+  nav .navbar .navbar-left {
+    width: 100%;
+    justify-content: space-around;
+  }
+}
+nav .navbar .navbar-left .li1 {
+  background: rgba(253, 242, 242, 0.943);
+  color: black;
+}
+nav .navbar .navbar-left li {
+  padding: 25px 15px;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: white;
+}
+@media screen and (max-width: 850px) {
+  nav .navbar .navbar-left li {
+    width: 33%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 420px) {
+  nav .navbar .navbar-left li {
+    font-size: 8px;
+    padding: 15px 10px;
+  }
+}
+nav .navbar .navbar-left li:hover {
+  background: rgba(253, 242, 242, 0.943);
+  color: black;
+}
+nav .navbar .navbar-right {
+  display: flex;
+  justify-content: space-around;
+  width: 25%;
+}
+@media screen and (max-width: 850px) {
+  nav .navbar .navbar-right {
+    display: none;
+  }
+}
+nav .navbar .navbar-right i {
+  color: white;
+}
+
+main {
+  width: 75%;
+  margin: 0 auto;
+  background: white;
+  padding: 60px 0;
+}
+main .section1 p {
+  font-family: "font1";
+  text-align: center;
+  font-size: 0.7rem;
+  width: 50%;
+  margin: 0 auto;
+  line-height: 30px;
+}
+main .section1 .date {
+  position: relative;
+  font-size: medium;
+  width: 100%;
+}
+main .section1 .date::before {
+  content: "";
+  height: 2px;
+  width: 30%;
+  background: rgba(222, 212, 212, 0.512);
+  position: absolute;
+  top: 50%;
+  left: 10%;
+}
+@media screen and (max-width: 850px) {
+  main .section1 .date::before {
+    width: 20%;
+  }
+}
+main .section1 .date::after {
+  content: "";
+  height: 2px;
+  width: 30%;
+  background: rgba(222, 212, 212, 0.512);
+  position: absolute;
+  top: 50%;
+  right: 10%;
+}
+@media screen and (max-width: 850px) {
+  main .section1 .date::after {
+    width: 20%;
+  }
+}
+main .section1 h2 {
+  text-transform: uppercase;
+  width: 60%;
+  text-align: center;
+  margin: 50px auto 40px auto;
+  letter-spacing: 2px;
+  font-family: "font2";
+  font-size: 2.8rem;
+}
+@media screen and (max-width: 700px) {
+  main .section1 h2 {
+    font-size: 1.5rem;
+  }
+}
+main .section1 .section1-img {
+  background: url(../images/pic01.jpg) center/cover;
+  height: 550px;
+  margin: 50px 100px;
+}
+@media screen and (max-width: 1000px) {
+  main .section1 .section1-img {
+    height: 300px;
+  }
+}
+@media screen and (max-width: 1000px) and (max-width: 800px) {
+  main .section1 .section1-img {
+    height: 200px;
+    margin: 50px 50px;
+  }
+}
+@media screen and (max-width: 1000px) and (max-width: 500px) {
+  main .section1 .section1-img {
+    height: 150px;
+  }
+}
+@media screen and (max-width: 1000px) and (max-width: 400px) {
+  main .section1 .section1-img {
+    height: 120px;
+  }
+}
+
+.section2 {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+@media screen and (max-width: 900px) {
+  .section2 {
+    display: block;
+  }
+}
+.section2 .section2-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 700px;
+  border-top: 1px solid rgba(222, 212, 212, 0.512);
+  border-right: 1px solid rgba(222, 212, 212, 0.512);
+  padding: 0 50px;
+}
+.section2 .section2-container :nth-child(4) {
+  text-align: left;
+}
+.section2 p {
+  font-family: "font1";
+  font-size: small;
+  text-align: center;
+  line-height: 30px;
+}
+.section2 h4 {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-family: "font2";
+  letter-spacing: 1px;
+  text-align: center;
+}
+.section2 .img-left {
+  background: url(../images/pic02.jpg) center/cover;
+  height: 250px;
+}
+@media screen and (max-width: 650px) {
+  .section2 .img-left {
+    height: 200px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .section2 .img-left {
+    height: 150px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .section2 .img-left {
+    height: 100px;
+  }
+}
+.section2 .img-right {
+  background: url(../images/pic03.jpg);
+  height: 250px;
+}
+@media screen and (max-width: 850px) {
+  .section2 .img-right {
+    background: url(../images/pic03.jpg) right/cover;
+  }
+}
+@media screen and (max-width: 650px) {
+  .section2 .img-right {
+    height: 200px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .section2 .img-right {
+    height: 150px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .section2 .img-right {
+    height: 100px;
+  }
+}
+
+footer {
+  width: 75%;
+  margin: 20px auto;
+  background: rgb(227, 226, 226);
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+@media screen and (max-width: 850px) {
+  footer {
+    display: block;
+  }
+}
+footer form {
+  padding: 50px 50px;
+}
+footer form div {
+  display: flex;
+  flex-direction: column;
+}
+footer form div label {
+  font-family: "font2";
+  text-transform: uppercase;
+  font-size: x-small;
+  letter-spacing: 1px;
+  color: rgb(89, 88, 88);
+}
+footer form div label,
+footer form div input,
+footer form div textarea {
+  margin-bottom: 10px;
+  background: transparent;
+}
+footer form div input {
+  height: 40px;
+}
+footer form div input,
+footer form div textarea {
+  border: solid 1px rgba(174, 167, 167, 0.307);
+  border-radius: 3px;
+  resize: none;
+}
+footer form .submit {
+  background: none;
+  border: 2px solid gray;
+  padding: 10px 20px;
+  margin-top: 30px;
+  font-family: "font2";
+  text-transform: uppercase;
+  font-size: x-small;
+  color: gray;
+  letter-spacing: 1px;
+}
+footer .contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-left: 1px solid rgba(174, 167, 167, 0.307);
+}
+@media screen and (max-width: 850px) {
+  footer .contact {
+    border-top: 1px solid rgba(174, 167, 167, 0.307);
+  }
+}
+footer .contact div {
+  height: 120px;
+  display: grid;
+  grid-template-columns: 35% 65%;
+  align-items: center;
+  padding: 0 100px 0 30px;
+  border-bottom: 1px solid rgba(174, 167, 167, 0.307);
+}
+@media screen and (max-width: 600px) {
+  footer .contact div {
+    grid-template-columns: 25% 75%;
+    padding: 0 50px 0 30px;
+  }
+}
+@media screen and (max-width: 470px) {
+  footer .contact div {
+    padding: 0 10px 0 15px;
+    grid-template-columns: 20% 80%;
+  }
+}
+footer .contact :nth-child(4) {
+  border-bottom: none;
+}
+footer .contact h5 {
+  margin-right: 100px;
+  text-transform: uppercase;
+  font-family: "font2";
+  font-size: x-small;
+  color: rgb(89, 88, 88);
+}
+footer .contact p {
+  color: rgb(153, 144, 144);
+  font-family: "font1";
+  font-size: small;
+  font-weight: bold;
+}
+footer .contact a {
+  margin-right: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  border: 1px solid rgba(174, 167, 167, 0.307);
+  border-radius: 50px;
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+  font-size: small;
+}/*# sourceMappingURL=index.css.map */

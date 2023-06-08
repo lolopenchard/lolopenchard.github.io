@@ -1,0 +1,18 @@
+button {
+  font-family: "font2";
+  font-size: small;
+  padding: 10px 30px;
+  border: 2px solid black;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: transparent;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    color: white;
+    background: black;
+  }
+}
