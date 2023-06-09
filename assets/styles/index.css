@@ -76,6 +76,10 @@ header div p {
   margin-bottom: 50px;
   margin-top: 50px;
 }
+header div a {
+  color: white;
+  text-decoration: none;
+}
 header div i {
   border: 2px solid rgba(253, 242, 242, 0.943);
   border-radius: 50px;
@@ -236,13 +240,16 @@ main .section1 .section1-img {
 }
 
 .section2 {
-  margin-top: 100px;
+  margin-top: 70px;
   display: grid;
   grid-template-columns: 50% 50%;
 }
 @media screen and (max-width: 900px) {
   .section2 {
     display: block;
+  }
+  .section2 :nth-child(2) {
+    margin-top: 30px;
   }
 }
 .section2 .section2-container {
@@ -256,6 +263,11 @@ main .section1 .section1-img {
 }
 .section2 .section2-container :nth-child(4) {
   text-align: left;
+}
+@media screen and (max-width: 900px) {
+  .section2 .section2-container {
+    height: 600px;
+  }
 }
 .section2 p {
   font-family: "font1";

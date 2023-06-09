@@ -30,6 +30,10 @@ header {
       margin-bottom: 50px;
       margin-top: 50px;
     }
+    a {
+      color: white;
+      text-decoration: none;
+    }
     i {
       border: 2px solid $white;
       border-radius: 50px;
@@ -176,11 +180,15 @@ main {
 // *************************************section2****************************
 
 .section2 {
-  margin-top: 100px;
+  margin-top: 70px;
   display: grid;
   grid-template-columns: 50% 50%;
   @media screen and (max-width: 900px) {
     display: block;
+
+    :nth-child(2) {
+      margin-top: 30px;
+    }
   }
 
   .section2-container {
@@ -193,6 +201,9 @@ main {
     padding: 0 50px;
     :nth-child(4) {
       text-align: left;
+    }
+    @media screen and (max-width: 900px) {
+      height: 600px;
     }
   }
   p {
